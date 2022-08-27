@@ -1,0 +1,14 @@
+<html>
+  <body>
+    {{#with transaction}}
+    <h1>Wie war ihre Erfahrung mit {{listing.title}}? Teile sie in den Bewertungen und hilf anderen!</h1>
+
+    <p>Sie haben {{listing.title}} von {{provider.display-name}} in Anspruch genommen. Hinterlassen sie dem Anbieter eine Bewertung. Bewertungen sind ein wichtiger Teil von {{marketplace.name}}.</p>
+
+    <p><a href="{{marketplace.url}}/order/{{url-encode id}}/details">Bewertung schreiben</a></p>
+    {{/with}}
+
+    <hr />
+    <p>You have received this email notification because you are a member of {{marketplace.name}}. If you no longer wish to receive these emails, please contact {{marketplace.name}} team.</p>
+  </body>
+</html>
